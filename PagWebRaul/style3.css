@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS';
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.logo{
+    width: 220px;
+    cursor: pointer;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #ff8800;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+.col p{
+    margin-left: 406px;
+}
+
+h1{
+    margin-left: 400px;
+    color: #fff;
+    font-size: 100px;
+}
+
+p{
+    margin-left: 0px;
+    color: white;
+    font-size: 20px;
+    line-height: 15px;
+}
+.card{
+    width: 700px;
+    height: 180px;
+    display:inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    margin-right: 200px;
+}
+
+.card h5{
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+
+.card1{
+    background-image: url(img/card1.png);
+    
+}
+
+.card2{
+    background-image: url(img/card2.png);
+}
+
+.card3{
+    background-image: url(img/card3.png);
+}
+
+.card4{
+    background-image: url(img/card4.png);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+
+footer{
+    position: absolute;
+    bottom: 1;
+    left: 1;
+    right: 2;
+    background: #272727;
+    height: auto;
+    width: 100vw;
+    font-family: 'Trebuchet MS';
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footercontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footercontent h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    
+}
+
+.footercontent p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socialmedia{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socialmedia li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+
+.footerbottom{
+    background-color: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;   
+}
+
+.footerbottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize; 
+}
+
+.footerbottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+#blender .container{
+    color: wheat;
+}
+
+#blender .container p{
+    text-align:center;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.5;
+}
+
+#blender .container h1{
+    margin-left: 3%;
+    text-align: center;
+}
+
+#blender .container h2{
+    text-align: center;
+    color: white;
+    margin-left: 3%;
+    font-size:xx-large;
+}
+
+#blender .basics{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.textblender{
+    transform: translateY(50px);
+    transition: 0.5s all ease-in-out;
+}
+
+.appeartext{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#modeling .container p{
+    text-align:center;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.5;
+}
+
+#modeling .container h1{
+    margin-left: 3%;
+    text-align: center;
+}
+
+#modeling .container h2{
+    margin-left: 3%;
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 1.5%;
+}
+
+.box #image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2.5%;
+}
+
+#rigging .container p{
+    text-align: justify;
+    margin-top: 1%;
+    margin-left: 3%;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+#rigging .img-container{
+    background-image: url("img/image.png");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+    padding-left: 10%;
+}
+
+#rigging .container h1{
+    margin-left: 3%;
+}
+
+#rigging .container{
+    display: flex;
+}
+
+#rigging .text{
+    text-align: initial;
+    margin-right: 5%;
+    
+}
+
+#rigging .armature{
+    padding: 5%;
+    max-width: 50%;
+    /*border: 2px solid orange*/
+    
+}
+
+#animation .container p{
+    text-align:center;
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+    line-height: 1.5;
+}
+
+#animation .container h2{
+    text-align: center;
+    color: white;
+}
+
+#animation .container h1{
+    margin-left: 3%;
+    text-align: center;
+}
+
+#animation .animationimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-top: 2.5%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+

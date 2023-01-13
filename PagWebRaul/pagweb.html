@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    <script src="java2.js"></script>
+    <title>learnblender</title>
+</head>
+
+<body>
+    <section id="head">
+        <header>
+            <div class="container">
+                <div class="navbar">
+                    <a href="#head">
+                        <img src="img/blender_logo_no_socket_white.png" class="logo">
+                    </a>
+                    <ul>
+                        <li><a href="#blender">Blender</a></li>
+                        <li><a href="#modeling">Modeling</a></li>
+                        <li><a href="#rigging">Rigging</a></li>
+                        <li><a href="#animation">Animation</a></li>
+                    </ul>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <h1>Learn Blender</h1>
+                        <p>Learn the basics of blender to be able to model and animate a low poly character.</p>
+                    </div>
+                    <p id="output"></p>
+
+
+                    <div class="col">
+                        <div class="card card1">
+                            <h5>Basics of Blender</h5>
+                        </div>
+                        <div class="card card2">
+                            <h5>Modeling</h5>
+                        </div>
+                        <div class="card card3">
+                            <h5>Rigging</h5>
+                        </div>
+                        <div class="card card4">
+                            <h5>Animation</h5>
+                        </div>
+                    </div>
+        </header>
+    </section>
+
+    <section id="blender">
+        <div class="container">
+            <h1>Learn the basics</h1>
+            <div class="textblender">
+                <p>Blender is a fully integrated 3D content creation program that offers a wide range of essential
+                    tools,
+                    including Modeling, Rendering, Animation & Rigging, Video Editing, VFX, Compositing, Texturing and
+                    many
+                    types of Simulations.</p>
+                <br>
+                <h2>Basic Tools/Interface</h2>
+                <p>- 3D View (We work on LAYOUT format)</p>
+                <p>- The viewport ables us to see the object in a different format </p>
+                <p>- Camera, Object, Light</p>
+                <p>- Viewport subdivision is an option</p>
+                <p>- We use the numpad to change the view(front, sides, etc)</p>
+                <p>- Transformation tools</p>
+                <img src="img/modeling_meshes_primitives_all.png" class="basics">
+            </div>
+        </div>
+    </section>
+
+    <section id="modeling">
+        <div class="container">
+            <h1>Modeling</h1>
+            <h2>Low Poly Character</h2>
+            <p>Low-poly is a style of 3D modeling where objects are created with a low number of polygons, giving them a
+                stylized, geometric look. The name "low-poly" comes from the fact that it uses fewer polygons in the
+                mesh, which is the combination of vertices, surfaces, and edges that make up a 3D object. This results
+                in a distinct style.</p>
+            <p>Low-poly models are a type of 3D modeling that use a low number of polygons, making the individual shapes
+                less noticeable and resulting in a stylized, geometric look. These models are popular in the video game
+                industry because they are lightweight and easy to render, and can be faster to create. They also allow
+                for more creative freedom in design, similar to creating a caricature of the real thing. Low-poly models
+                are also commonly used in 3D printing due to their simple shapes and lack of fine detail, making them
+                easy to print and a great starting point for beginners.</p>
+            <div class="box">
+                <img id="image">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="rigging">
+        <div class="container">
+            <img id="image1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="img/151343.png" alt="rigging">
+            <div class="text">
+                <h1>Rigging</h1>
+                <p>1. Create the skeleton: Create the bones of the skeleton using Blender's armature tool. Position the
+                    bones to match the character's anatomy.</p>
+                <p>2. Parent the mesh to the skeleton: Select the character mesh and then select the armature
+                    (skeleton). In the object mode, press Ctrl+P and select "with automatic weights" option.</p>
+                <p>3. Test the rig: Select the armature and enter pose mode. Move the bones to see if the character's
+                    mesh follows the movement correctly.</p>
+                <p>4. Fine-tune the rig: If there are any issues with the rig, such as parts of the mesh not following
+                    the movement of the bones correctly, use Blender's weight painting tools to adjust the way the mesh
+                    is influenced by the bones.</p>
+                <p>5. Animate the character: Once the rig is working correctly, you can animate the character by posing
+                    the bones in different positions and keyframing them to create movement.</p>
+                <!-- <img src="img/Armature.png" class="armature"> -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="animation">
+        <div class="container">
+            <h1>Animation</h1>
+            <h2>Blender's animation feature set offers:</h2>
+
+            <p>Character animation pose editor</p>
+            <p>Non Linear Animation (NLA) for independent movements</p>
+            <p>Forward/inverse kinematics for fast poses</p>
+            <p>Sound synchronization</p>
+            <img src="img/blender-keyframes.png" class="animationimage">
+        </div>
+    </section>
+
+    <section id="animation">
+        <div class="container">
+            <h1>Animation</h1>
+            <p>Create keyframes for your character's movements at specific points in time. This can be done by moving
+                the character's joints and bones to the desired positions and setting keyframes.</p>
+            <p>Adjust the timing and interpolation of the keyframes to create smooth and believable motion.</p>
+            <p>Repeat the process for each action or movement that you want the character to perform.</p>
+            <p>Once you have completed the animation, you can export the animation as a file format that can be used in
+                your game engine or other application.</p>
+            <img src="img/animationgif.gif" class="animationimage">
+        </div>
+    </section>
+
+
+
+    <footer>
+        <div class="foootercontent">
+            <h3>Learn Blender</h3>
+            <p>Contact us via social media: @learnblender</p>
+            <ul class="socialmedia">
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            </ul>
+        </div>
+        <div class="footerbottom">
+            <p>Copyright &copy;2022 Learn Blender. </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
